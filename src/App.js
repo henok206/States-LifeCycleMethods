@@ -10,24 +10,24 @@ import UpdatingState from "./Components/StatesExample/UpdatingState";
 import PassingPropsToState from "./Components/StatesExample/PassingPropsToState";
 
 class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				{/* <NormalVariables /> */}
+    render() {
+        return (
+            <div className="App">
+                {/* <NormalVariables />  */}
 
-				{/* <InitializingState /> */}
-				{/* <PassingPropsToState batchNumber="April 2023" /> */}
+                <InitializingState />
+                {/* <PassingPropsToState batchNumber="April 2023" /> */}
 
-				{/* <HandlingEvents /> */}
+                {/* <HandlingEvents /> */}
 
-				{/* <UpdatingState /> */}
+                {/* <UpdatingState /> */}
 
-				{/* <MyWillMountAndDidMount /> */}
-				{/* <MyComponentDidUpdate /> */}
-				<MyComponentWillUnmount />
-			</div>
-		);
-	}
+                {/* <MyWillMountAndDidMount /> */}
+                {/* <MyComponentDidUpdate /> */}
+                {/* <MyComponentWillUnmount /> */}
+            </div>
+        );
+    }
 }
 
 export default App;
