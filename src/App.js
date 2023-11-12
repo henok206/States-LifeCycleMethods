@@ -13,10 +13,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {/* <NormalVariables />  */}
+                {/* <NormalVariables />   */}
 
-                <InitializingState />
-                {/* <PassingPropsToState batchNumber="April 2023" /> */}
+                {/* <InitializingState /> */}
+                <PassingPropsToState batchName="June-2023" />
 
                 {/* <HandlingEvents /> */}
 

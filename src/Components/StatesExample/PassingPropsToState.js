@@ -1,27 +1,30 @@
 import React, { Component } from "react";
 import Bob from "./Bob";
 class PassingPropsToState extends Component {
-	constructor(props) {
-		super();
-		this.state = {
-			name: "Kebede",
-			group: 2,
-			batch: props.batchNumber,
-			sampleText: "Hello World",
-		};
-	}
+    constructor(props) {
+        super();
+        this.state = {
+            name: "Henok",
+            group: 4,
+            mainInstructor: "Adugna",
 
-	render() {
-		return (
-			<div>
-				<h1>{this.state.name}</h1>
-				<h2>{this.state.group}</h2>
-				<h3>{this.state.batch}</h3>
+            batch: props.batchName,
+            sampleText: "Hello World",
+        };
+    }
 
-				<Bob text={this.state.sampleText} />
-			</div>
-		);
-	}
+    render() {
+        return (
+            <div>
+                <h1>My Name is : {this.state.name}</h1>
+                <h2>I am Group {this.state.group} Member</h2>
+                <h3>I am a {this.state.batch} batch student</h3>
+                <h3>My main Instructor is {this.state.mainInstructor}</h3>
+
+                <Bob text={this.state.sampleText} />
+            </div>
+        );
+    }
 }
 
 export default PassingPropsToState;
